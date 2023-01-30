@@ -1,0 +1,33 @@
+body{
+margin: 0;
+padding: 0;
+text-align: center;
+background: url(background.jpg)
+}
+
+.h4{
+    color: white;
+}
+.name
+{
+margin-top: 100px;
+color: white;
+text-transform: uppercase;
+transition: all 4s ease-in-out;
+}
+.form1{
+    margin-top: 50px;
+    transition: all 4s ease-in-out;
+    color: white;
+    font-size: 30px;
+
+}
+.form-control{
+    width:200px;
+    background: transparent;
+    border: 0px;
+    outline: 0px;
+    border-bottom: 1px solid grey;
+    color: #fff;
+    font: 16px;
+}

@@ -1,0 +1,68 @@
+
+.container{
+    width: 1200px;
+    margin:auto;
+    text-align: center;
+}
+
+.option-wrapper{
+    display:flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.option-group{
+display:flex;
+flex-direction: column;
+margin: 5px 20px;
+}
+
+.option-group > img{
+width: 150px;
+
+}
+
+.button.option-btn{
+ cursor: pointer;
+ width: 140px;
+ margin:3px auto;
+ padding: 9px 0px;
+ background:  #F9370E; 
+ box-shadow: 0px 4px #A32004;
+ border-radius: 3px;
+ color: #fff;
+ font-size: 16px;
+ border: none;
+ transition: 1s;
+
+}
+.button.active{
+position: relative;
+top: 3px;
+background:#A32004;
+box-shadow: 0px 4px red;
+outline: 0;
+transform:scale(1.2);
+}
+
+.button.btn-submit{
+cursor: pointer;
+width: 140px;
+padding: 9px 0px;
+margin: 20px;
+font-size: 16px;
+border-radius: 3px;
+color: #fff;
+background:#42c7c1;
+border: none;
+box-shadow: 0px 4px #216360;
+transition: 0.3s;
+}
+
+.button.btn-submit:focus{
+    position: relative;
+    top:3px;
+    transform: scale(1.2);
+
+}
+

@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/bckmusic.mp3-3d82eec942090ac59758112b600a8bfc.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/bckmusic.mp3"
+dest_files=[ "res://.import/bckmusic.mp3-3d82eec942090ac59758112b600a8bfc.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

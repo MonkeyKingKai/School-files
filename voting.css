@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,100;1,200&display=swap');
+
+*{
+    
+    margin:0;
+    padding: 0;
+    outline: 0;
+}
+
+.filler{
+    position: absolute;
+    top:0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: .7;
+
+    background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(150,50,50,1) 17%, rgba(255,0,3,1) 66%, rgba(0,212,255,1) 90%);
+}
+table{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: 60%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    border-radius: 12px 12px 0 0;
+    overflow: hidden;
+    box-shadow: 0 2px 12px rgba(32, 32, 32,.3);
+    background: #fafafa;
+    text-align: center;
+}
+th, td{
+    padding: 12px 15px;
+}
+th{
+    background: #ff6459;
+    color: #fafafa;
+    text-transform: uppercase;
+    font-family:'Kanit', sans-serif;
+
+}
+td{
+    font-family: 'Open sans', 'sans-serif';
+}
+tr:nth-child(odd){
+    background-color:#eeeeee;
+}

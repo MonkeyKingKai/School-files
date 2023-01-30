@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/newhit.mp3-ac210dc2b422cb3d2d3d917c118bd68b.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/newhit.mp3"
+dest_files=[ "res://.import/newhit.mp3-ac210dc2b422cb3d2d3d917c118bd68b.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/newwing.mp3-e02a73956351aa765fc9de968b0f3185.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/newwing.mp3"
+dest_files=[ "res://.import/newwing.mp3-e02a73956351aa765fc9de968b0f3185.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

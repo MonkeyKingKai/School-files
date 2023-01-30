@@ -1,0 +1,108 @@
+*{
+    padding: 0px;
+    margin: 0px;
+
+    
+
+
+}
+
+body{
+    background-color: black;
+}
+
+#game{
+    width: 1448px;
+    height: 648px;
+    border: 1px solid black;
+    background-image: url('background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    margin-left: 13%;
+    margin-top: 5%;
+    overflow: hidden;
+    position: relative;
+background-color: black;
+    
+}
+
+#character img{
+
+    width: 100px;
+    height: 80px;
+}
+#character{
+
+position: absolute;
+top: 578px;
+}
+.animate{
+    animation: jump 500ms;
+
+}
+
+#block img{
+    width: 100px;
+    height: 80px;
+}
+@keyframes jump{
+    0%{top: 578px;}
+    50%{top: 490px;}
+    0%{top: 578px;}
+}
+#block{
+    position: absolute;
+    top: 580px; 
+    left: 1428x;
+    animation: block 1s infinite linear;
+}
+
+@keyframes block {
+    0%{left: 1428px;}
+    100%{left: -40px;}
+}
+
+#menu{
+
+    height: 200px;
+background-color: black;
+    width: 100px;
+    
+
+}
+
+button{
+ position: absolute;
+ width: 200px;
+ height: 100px;
+ padding: 15px, 0;
+ left: 810px;
+ margin-top: 80px;
+ background: rgb(105,146,226);
+background: linear-gradient(90deg, rgba(105,146,226,1) 1%, rgba(153,198,228,1) 12%, rgba(140,242,236,1) 37%, rgba(53,188,219,1) 67%, rgba(149,194,228,1) 88%, rgba(105,146,226,1) 99%);
+ font-size: 30px;
+ color: white;
+ font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+
+}
+
+h1{
+    color: white;
+    margin-left: 600px;
+    font-size: 40px;
+    margin-top: 2%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+
+h2{
+    color: gray;
+    margin-left: 600px;
+    font-size: 40px;
+    margin-top: 10%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-left: 600px;
+}
+

@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://characters/EVil Wizard 2/Sprites/Idle.png" type="Texture" id=1]
+
+[sub_resource type="Animation" id=1]
+resource_name = "Ressurect"
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Sprite" type="Sprite" parent="."]
+texture = ExtResource( 1 )
+hframes = 11
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Sprite"]
+anims/Ressurect = SubResource( 1 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+build_mode = 1
+polygon = PoolVector2Array( 28, -10, 30, -4, 22, 5, 17, 13, 29, 17, 28, 28, 21, 32, 20, 39, 40, 42, 53, 41, 43, 30, 43, 11, 51, 9 )

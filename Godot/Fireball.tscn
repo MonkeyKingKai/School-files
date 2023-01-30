@@ -1,0 +1,46 @@
+[gd_scene load_steps=9 format=2]
+
+[ext_resource path="res://assets/textures/FB00_nyknck/FB001.png" type="Texture" id=1]
+[ext_resource path="res://assets/textures/FB00_nyknck/FB002.png" type="Texture" id=2]
+[ext_resource path="res://assets/textures/FB00_nyknck/FB004.png" type="Texture" id=3]
+[ext_resource path="res://assets/textures/FB00_nyknck/FB003.png" type="Texture" id=4]
+[ext_resource path="res://assets/textures/FB00_nyknck/FB005.png" type="Texture" id=5]
+[ext_resource path="res://Fireball.gd" type="Script" id=6]
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 1 ), ExtResource( 2 ), ExtResource( 4 ), ExtResource( 3 ), ExtResource( 5 ) ],
+"loop": true,
+"name": "Shoot",
+"speed": 12.0
+} ]
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 22.75, 15 )
+
+[node name="Fireball" type="Area2D" groups=["Assest", "damagable"]]
+position = Vector2( 14, 17 )
+script = ExtResource( 6 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+position = Vector2( 22, 12 )
+scale = Vector2( 1.25, 1.5625 )
+frames = SubResource( 1 )
+animation = "Shoot"
+frame = 3
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( 28.75, 11 )
+shape = SubResource( 2 )
+
+[node name="VisibilityNotifier2D" type="VisibilityNotifier2D" parent="."]
+position = Vector2( 28.5, 9.5 )
+scale = Vector2( 2.15, 1.55 )
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 2.0
+autostart = true
+
+[connection signal="area_entered" from="." to="." method="_on_Fireball_area_entered"]
+[connection signal="screen_exited" from="VisibilityNotifier2D" to="." method="_on_VisibilityNotifier2D_screen_exited"]
+[connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]

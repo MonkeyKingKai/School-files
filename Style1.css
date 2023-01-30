@@ -1,0 +1,26 @@
+body{
+    background-image:url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/302457af-3536-48e0-a55a-0c161f079e36/deapxvb-a7f13486-6ae7-4bcc-87fc-3bd73d670813.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzMwMjQ1N2FmLTM1MzYtNDhlMC1hNTVhLTBjMTYxZjA3OWUzNlwvZGVhcHh2Yi1hN2YxMzQ4Ni02YWU3LTRiY2MtODdmYy0zYmQ3M2Q2NzA4MTMuZ2lmIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.vXpO-_QUlM6NB18Gh7jD6AruhyYZC8FnBKpnqTLlzQ0);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;    
+  }
+
+  a{
+    position: relative;
+    display: inline-block;
+    padding: 12px 36px;
+    margin: 10px 0;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 18px;
+    letter-spacing: 2px;
+    border-radius: 40px;
+    background: rgb(245,131,246);
+background: linear-gradient(174deg, rgba(245,131,246,1) 18%, rgba(219,102,217,1) 45%, rgba(212,118,205,1) 88%);
+}

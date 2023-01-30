@@ -1,0 +1,63 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://assets/textures/pixil-frame-0 (1).png" type="Texture" id=1]
+
+[sub_resource type="RectangleShape2D" id=4]
+extents = Vector2( 630.5, 85 )
+
+[sub_resource type="Animation" id=5]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( -179, 471 ) ]
+}
+
+[sub_resource type="Animation" id=6]
+resource_name = "scroll"
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0, 0 ), Vector2( -148, 0 ) ]
+}
+
+[node name="Ground" type="StaticBody2D"]
+position = Vector2( 2, 420 )
+scale = Vector2( 1.5, 1 )
+
+[node name="DeathZone" type="Area2D" parent="."]
+position = Vector2( 73, 459 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="DeathZone"]
+position = Vector2( 553.667, -378 )
+shape = SubResource( 4 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( 628, 83 )
+shape = SubResource( 4 )
+
+[node name="Sprite" type="Sprite" parent="."]
+position = Vector2( -179, 471 )
+scale = Vector2( 2.0496, 1.05952 )
+texture = ExtResource( 1 )
+centered = false
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+autoplay = "scroll"
+anims/RESET = SubResource( 5 )
+anims/scroll = SubResource( 6 )
